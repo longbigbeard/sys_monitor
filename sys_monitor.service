@@ -1,0 +1,10 @@
+[Unit]
+Description=system monitor and send date
+After=network.service
+
+[Service]
+Type=simple
+ExecStart=/opt/sys_monitor/start_monitor.py
+
+[Install]
+WantedBy=multi-user.target
